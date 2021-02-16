@@ -13,12 +13,189 @@
     />
 
     <title>Frontend Mentor | Manage landing page</title>
+    <!-- Adding  Swiper -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Adding Style -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container main-header-container">
+        <div id="logo">
+          <a href="" class="logo-link">
+            <img src="./images/logo.svg" alt="Manage Logo" class="logo-img"
+          /></a>
+        </div>
+
+        <div class="menu-toggle">
+          <img src="./images/icon-close.svg" alt="" class="close-menu" />
+          <img src="./images/icon-hamburger.svg" alt="" class="open-menu" />
+        </div>
+
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Pricing</a></li>
+            <li class="nav-item"><a href="#">Product</a></li>
+            <li class="nav-item"><a href="#">About Us</a></li>
+            <li class="nav-item"><a href="#">Careers</a></li>
+            <li class="nav-item"><a href="#">Community</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn-primary">get started</a>
+      </div>
+    </header>
+    <!-- End Main Header -->
+    <!-- Intro  -->
+    <section id="intro">
+      <div class="container intro-container">
+        <div class="col-1">
+          <img
+            src="./images/illustration-intro.svg"
+            alt="Intro"
+            class="intro-img"
+          />
+        </div>
+        <div class="col-2">
+          <h1 class="intro-heading">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="intro-description">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Intro -->
+    <section class="about-manage">
+      <div class="container about-manage-container">
+        <div class="col-1">
+          <h1 class="about-manage-heading">What’s different about Manage?</h1>
+          <p class="about-manage-description">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="col-2">
+          <div class="features">
+            <div class="feature">
+              <div class="feature-heading">
+                <div class="feature-number">
+                  <h3>01</h3>
+                </div>
+                <h3 class="featue-title">Track company-wide progress</h3>
+              </div>
+              <p class="feature-description">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="feature-heading">
+                <div class="feature-number">
+                  <h3>02</h3>
+                </div>
+                <h3 class="featue-title">Advanced built-in reports</h3>
+              </div>
+              <p class="feature-description">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="feature-heading">
+                <div class="feature-number">
+                  <h3>03</h3>
+                </div>
+                <h3 class="featue-title">Everything you need in one place</h3>
+              </div>
+              <p class="feature-description">
+                Everything you need in one place Stop jumping from one service
+                to another to communicate, store files, track tasks and share
+                documents. Manage offers an all-in-one team productivity
+                solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Manage -->
+    <!-- Testimonials  -->
+    <section class="testimonials-section">
+      <h1 class="testimonials-heading">What they’ve said</h1>
+      <div class="testimonials swiper-container">
+        <!-- testimonials Swiper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <img src="./images/avatar-anisha.png" alt="Avatar" />
+              <h3 class="testimonial-title">Anisha Li</h3>
+              <p class="testimonial-content">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <img src="./images/avatar-ali.png" alt="Avatar" />
+              <h3 class="testimonial-title">Ali Bravo</h3>
+              <p class="testimonial-content">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <img src="./images/avatar-richard.png" alt="Avatar" />
+              <h3 class="testimonial-title">Richard Watts</h3>
+              <p class="testimonial-content">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial">
+              <img src="./images/avatar-shanai.png" alt="Avatar" />
+              <h3 class="testimonial-title">Shanai Gough</h3>
+              <p class="testimonial-content">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <a href="#" class="btn btn-primary">get started</a>
+    </section>
+    <!-- End Testimonials -->
     <!-- Adding JavaScript -->
+    <!-- swiper javascript  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
