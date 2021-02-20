@@ -766,8 +766,9 @@ body.open .menu-toggle .open-menu {
     z-index: initial;
     opacity: initial;
     transition: initial;
-    display: none;
+    display: block;
     margin-bottom: 20px;
+    visibility: visible;
   }
   .overlay {
     display: none;
